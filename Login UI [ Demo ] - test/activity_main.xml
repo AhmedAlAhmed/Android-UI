@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.ahmed.myapplication.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:background="#35455f"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <ImageButton
+            android:id="@+id/circleImageView"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#a5b3b5"
+            android:drawableLeft="@drawable/ic_lock_outline_light_blue_300_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:paddingVertical="10dp"
+            android:password="true"
+            android:text=""
+            android:textColor="#a5b3b5"
+            android:textColorHint="#a5b3b5"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circleImageView"
+            android:layout_centerHorizontal="true"
+            android:text="PASSWORD SAVER"
+            android:textColor="#a5b3b5"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="#a5b3b5"
+            android:drawableLeft="@drawable/ic_tag_faces"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:paddingVertical="10dp"
+            android:text=""
+            android:textColor="#a5b3b5"
+            android:textColorHint="#a5b3b5"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="29dp"
+            android:text="Forget password ?"
+            android:textColor="#a5b3b5"
+            android:textSize="25dp"
+            android:id="@+id/textView2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:width="290dp"
+
+            android:background="#11b8cb"
+            android:padding="20dp"
+            android:text="LOGIN"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
